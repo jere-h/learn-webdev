@@ -79,6 +79,14 @@ h1 {
   opacity: 1;
 }
 
+.row {
+  pointer-events: none;
+}
+
+.row > * {
+  pointer-events: auto;
+}
+
 /* Small Mobile Devices */
 @media (max-width:767px){
 	.row{
