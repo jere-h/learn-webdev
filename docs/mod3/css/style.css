@@ -32,14 +32,11 @@ body{
 
 #navlist a{
 	color: white;
+	font-size:1.2em;
 }
 
 #navlist a:hover{
 	background:#777;
-}
-
-#navlist a span{
-	font-size: 1.8em;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
@@ -52,7 +49,12 @@ body{
 
 .body-item{
 	height:1000px;
-	background-color: grey;
+	background-color: #444;
+	margin-top:1em;
+	margin-bottom:2em;
+	padding:0.5em 2em 1em 2em;
+	color:#DDD;
+	text-align:justify;
 }
 
 #topmenu{
@@ -64,10 +66,10 @@ body{
 	background-color:#444;
 }
 
-.item2>h3{
+h3{
 	font-size:1.5em;
-	padding-top:1em;
 	color:white;
+	margin-bottom:0.7em;
 }
 
 .item2>p{
