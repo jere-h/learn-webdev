@@ -37,3 +37,15 @@ body {
 .navbar-dark {
 	background-color: #512DA8;
 }
+
+#reservebutton {
+	padding:10px;
+	font-weight: 500;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
