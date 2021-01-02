@@ -1,13 +1,17 @@
-# Learning Web Development
-Assignments from courses taken.
+Learning Web Development
+======
+Course files and assignments from various online courses on web development, from most recently completed to oldest completed course.
 
-## Front-End Web UI Frameworks and Tools: Bootstrap 4 <br> offered by Hong Kong University of Science and Technology
-Building a webpage in Bootstrap 4 sequentially: <br>
-- Bootstrap grid, Navbar, Breadcrumbs, Icon Fonts, Buttons, Form, Tables, Cards, etc
+## Front-End Web UI Frameworks and Tools: Bootstrap 4 <br> *(Hong Kong University of Science and Technology)*
+Features and implementation learnt:
+* Bootstrap grid, navbar, breadcrumbs, icon fonts, buttons, form, tables, cards
+* Badges, content tabs, accordion, carousel, modals, bootstrap jquery functions to change classes
+* CSS Preprocessors (less & scss), npm scripts (for building a deployment folder), task runners (grunt & gulp)
 
-## HTML, CSS, and Javascript for Web Developers <br> offered by Johns Hopkins University on Coursera.
-Module 2: Basic responsive design with Bootstrap <br>
-Module 3: Responsive dropdown navigation bar <br>
-Module 4: Basic javascript assignment <br>
-Module 5: Basic Ajax assignment <br>
+## HTML, CSS, and Javascript for Web Developers <br> *(Johns Hopkins University)*
+Introductory concepts learnt:
+* Basic responsive design with Bootstrap (Using different class types, media queries) <br>
+* Responsive dropdown navigation bar (bootstrap nav bar implementation) <br>
+* Basic Javascript assignment (basic functions)<br>
+* Basic Ajax assignment (building and populating http template using functions) <br>
 
