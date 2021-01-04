@@ -1,9 +1,9 @@
 import React from 'react';
-import { Media, Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 	function RenderDish({dish}) {  // same function as gone through in the videos
-		if (dish != null) {
-			return (
+		return (
+			<div className="col-12 col-md-5 m-1">
 				<Card>
 					<CardImg width="100%" src={dish.image} alt={dish.name} />
 					<CardBody>
@@ -11,41 +11,29 @@ import { Media, Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } f
 						<CardText>{dish.description}</CardText>
 					</CardBody>
 				</Card>
-			);
-		}
-		else {
-			return(
-				<div></div>
-			);
-		}
+			</div>
+		);
 	}
 
-	function RenderComments({dish}) {  // adapted from above function, added nested if-else statements
-		if (dish != null) {
-			if(dish.comments != null) {
-				const commentlines = dish.comments.map((msg) => {
-					var date = new Date(msg.date)
-					return(
-						<li key={msg.id}>
-							<p><i>{msg.comment}</i></p>
-							<p>-- {msg.author}, {date.toLocaleString('default', { dateStyle: 'medium' })}</p>
-						</li>
-					);
-				});
-				return (
-					<Media body>
-						<h4 className="mt-1">Comments</h4>
-						<ul className="list-unstyled">
-							{commentlines}
-						</ul>
-					</Media>
-				);
-			}
-			else {
-				return(
-					<div></div>
-				);
-			}
+	function RenderComments({comments}) {
+		if(comments != null) {
+			return (
+				<div className="col-12 col-md-5 m-1">
+					<h4 className="mt-1">Comments</h4>
+					<ul className="list-unstyled">
+						{comments.map((comment) => {
+							var date = new Date(comment.date)
+							return(
+								<li key={comment.id}>
+									<p><i>{comment.comment}</i></p>
+									<p>-- {comment.author}, {date.toLocaleString('default', { dateStyle: 'medium' })}</p>
+								</li>
+							);
+						 })
+						}
+					</ul>
+				</div>
+			);
 		}
 		else {
 			return(
@@ -55,18 +43,22 @@ import { Media, Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } f
 	}
 
 	const DishDetail = (props) => {
-		return (
-			<div className="container">
-				<div className="row">
-					<div className="col-12 col-md-5 m-1">
+		if (props.dish != null) {
+			return (
+				<div className="container">
+					<div className="row">
 						<RenderDish dish={props.dish} />
-					</div>
-					<div className="col-12 col-md-5 m-1">
-						<RenderComments dish={props.dish} />
+						<RenderComments comments={props.dish.comments} />
 					</div>
 				</div>
-			</div>
-		);
+			);
+		}
+		else {
+			return(
+				<div></div>
+			);
+		}
+
 	}
 
 
