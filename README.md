@@ -2,8 +2,15 @@ Learning Web Development
 ======
 Course files and assignments from various online courses on web development, from most recently completed to oldest completed course.
 
+## Front-End Web Development with React <br> *(Hong Kong University of Science and Technology)*
+Fundamentals of:
+* React Components
+* React Router, Single Page Applications
+* Flow Architecture, Redux
+* Actions, Rest API, Animations
+
 ## Front-End Web UI Frameworks and Tools: Bootstrap 4 <br> *(Hong Kong University of Science and Technology)*
-Features and implementation learnt:
+Features and basic implementations learnt:
 * Bootstrap grid, navbar, breadcrumbs, icon fonts, buttons, form, tables, cards
 * Badges, content tabs, accordion, carousel, modals, bootstrap jquery functions to change classes
 * CSS Preprocessors (less & scss), npm scripts (for building a deployment folder), task runners (grunt & gulp)
